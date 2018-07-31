@@ -1,0 +1,300 @@
+body {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box;
+  background:#eceeef;
+  min-height: 100%;
+}
+*,
+*::before,
+*::after {
+  -webkit-box-sizing: inherit;
+  box-sizing: inherit;
+}
+img {
+  max-width:100%;
+  vertical-align:bottom;
+}
+a {
+  color:#444;
+  text-decoration:none;
+}
+a:hover {
+  color:#444;
+}
+a:focus {
+  outline:0;
+}
+a:hover,
+a:active {
+  outline:0;
+}
+.App,#wrapper {
+  min-height: 100%;
+}
+svg {
+  max-width: 100%;
+  height: auto;
+}
+aside {
+  width:320px;
+  padding: 15px;
+  float:left;
+}
+aside h2 {
+  font-size:1em;
+  padding: 12px;
+  margin: 0;
+  background: #c40079;
+  color: #fff;
+}
+form {
+
+  background: #fff;
+}
+.fieldSet {
+  border: 2px solid #e8e8e8;
+  border-bottom:0;
+  margin: 0;
+}
+.fieldSet:last-child {
+  border-bottom:2px solid #e8e8e8;
+}
+.fieldSet legend {
+  float:left;
+  width:100%;
+  text-transform:capitalize;
+  padding: 5px 0;
+  font-weight:bold;
+}
+.fieldSet label {
+  width:100%;
+  padding:5px 0;
+  float:left;
+  cursor:pointer;
+}
+.fieldSet label::after {
+  content: '';
+  width: 1em;
+  height: 1em;
+  float: right;
+  border-radius: 0.5em;
+  border: 2px solid #545454;
+  -webkit-transition: box-shadow 0.4s; /* Safari */
+  transition:  box-shadow 0.4s;
+  box-shadow: inset 0px 0px 0px 2px transparent, inset 0px 0px 12px 5px transparent;
+}
+.fieldSet label.active::after {
+  box-shadow: inset 0px 0px 0px 2px #fff, inset 0px 0px 12px 5px #d13997;
+}
+.fieldSet ul label::after {
+  display:none;
+}
+.fieldSet ul label {
+  padding:5px 8px;
+  border:2px solid;
+  margin:3px;
+  border-radius:4px;
+  width:initial;
+  background:transparent;
+  -webkit-transition: color 0.4s, background 0.4s, border 0.4s; /* Safari */
+  transition:  color 0.4s, background 0.4s, border 0.4s;
+}
+.fieldSet ul label.active {
+    color:#fff;border: 2px solid #d13997;
+    background:#d13997;
+}
+.fieldSet ul {
+  padding:0;
+  margin:0;
+  width: 100%;
+}
+.fieldSet li {
+  list-style:none;
+}
+.fieldSet div div p {
+  width:50%;
+  float:left;
+  padding:0 9px;
+  margin:5px 0 3px;
+  font-weight:bold;
+}
+.fieldSet div div p:nth-child(2) {
+  text-align:right;
+  padding-right:8px;
+}
+label input[type="radio"],
+label input[type="checkbox"] {
+  display:none;
+}
+
+main {
+  float:right;
+  width: calc(100% - 320px);
+  display: flex;
+  flex-flow: row wrap;
+  justify-content: space-around;
+  padding-bottom:30px;
+  padding-top:1px;
+}
+.carMini {
+  width:48%;
+  margin: 15px 0 15px;
+  background: #fff;
+  box-shadow: 0px 0px 3px 0px #b7b7b7;
+  cursor:pointer;
+}
+.carMini figure {
+  margin:0;
+  width:50%;
+  float:left;
+}
+.carMini figure img {
+  max-height:169px;
+}
+.carMini div {
+  float:left;
+  width:50%;
+  padding: 0 15px;
+}
+.carMini div h2 {
+  margin: 22px 0 10px;
+  text-transform: uppercase;
+}
+.carMini div h3 {
+  margin:0px 0;
+  font-size: 0.9em;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow:ellipsis;
+  max-width: 45ch;
+}
+
+.carMini div p span {
+  color:#c40079;
+  font-weight:bold;
+  font-size:1.5em;
+}
+.carMini div ul {
+  margin:0;
+  padding:0;
+}
+.carMini div ul li {
+  list-style: none;
+  float:left;
+  padding-right:10px;
+  font-size:0.8em;
+
+}
+.buttonNext {
+  width: 98%;
+}
+.buttonNext button {
+  background: #c40079;
+  color: #fff;
+  padding: 10px 15px;
+  border: 0;
+  display:none;
+  font-weight:bold;
+  text-transform:uppercase;
+}
+.buttonNext button:nth-child(2) {
+  float:right;
+}
+.buttonNext button.active {
+  display:block;
+}
+svg circle {
+  cursor:pointer;
+}
+.singlePage {
+  width:100%;
+}
+.singlePage figure {
+  margin:0;
+}
+.singlePage figcaption {
+  position: absolute;
+  bottom:0;
+  background:#020202;
+}
+.singlePage figcaption {
+color:#fff;
+  padding-top: 10px;
+  width: 100%;
+
+}
+.singlePage figcaption p {
+  padding:15px;
+  clear: both;
+}
+.singlePage figcaption button span {
+
+  font-size: 0.65em;
+  background: #c40079;
+  padding: 15px;
+  margin: 0 15px;
+  text-transform: uppercase;
+}
+.singlePage figcaption button {
+
+  float: right;
+  padding: 15px;
+  background: transparent;
+  color: #fff;
+  font-weight: bold;
+  border: 0;
+  font-size: 2em;
+}
+.singlePage figcaption ul{
+  margin:0;padding:0;
+  margin-top: 15px;
+  float: left;
+}
+.singlePage figcaption ul li {
+  list-style: none;
+  padding:15px;
+  float:left;
+}
+.singlePage h1 {
+  position: absolute;
+  top:0;
+  text-align:center;
+  width:100%;
+  font-size:2em;
+}
+#closeButton {
+  position: absolute;
+  top:0;
+  right:0;
+  background: #fff;
+  padding: 10px 15px;
+  border: 0;
+  cursor:pointer;
+}
+@media only screen and (min-width:320px) {
+  .App {
+    max-width: 1000px;
+    margin: 0 auto;
+  }
+  .carMini {
+    width: 100%;
+    max-width: 600px;
+  }
+  .buttonNext {
+
+    max-width: 600px;
+  }
+}
+@media only screen and (min-width:1550px) {
+  .App {
+    max-width: 100%;
+    margin: 0 auto;
+  }
+  .buttonNext {
+
+    max-width: 100%;
+  }
+}

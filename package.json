@@ -1,0 +1,25 @@
+{
+  "name": "car-shop-sample",
+  "version": "1.0.0",
+  "description": "Car shop example to show skill",
+  "main": "server.js",
+  "scripts": {
+    "client-install": "cd client && npm install",
+    "start": "node server.js",
+    "server": "nodemon server.js",
+    "client": "npm start --prefix client",
+    "dev": "concurrently \"npm run server\" \"npm run client\""
+  },
+  "author": "Charles Inman",
+  "license": "MIT",
+  "devDependencies": {
+    "json-server": "^0.14.0",
+    "nodemon": "^1.14.6"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "concurrently": "^3.5.1",
+    "cors": "^2.8.4",
+    "express": "^4.16.2"
+  }
+}
